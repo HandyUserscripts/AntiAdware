@@ -35,4 +35,4 @@ Avoid to get **unwanted applications** while downloading **on many websites** wi
 
 After that you correctly prepared the installation, you can download the script here:
 
-**Download AntiAdware:** [![](http://image.noelshack.com/fichiers/2014/33/1408225203-download.png)](https://github.com/HandyUserscripts/AntiAdware/raw/master/AntiAdware.user.js)
+**Download AntiAdware:** [![](http://image.noelshack.com/fichiers/2014/33/1408225203-download.png)](https://github.com/HandyUserscripts/AntiAdware/raw/latest/AntiAdware.user.js)
