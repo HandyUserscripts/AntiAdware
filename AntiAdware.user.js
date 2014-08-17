@@ -60,8 +60,8 @@
 // @grant unsafeWindow
 
 // @homepageURL https://github.com/HandyUserscripts/AntiAdware
-// @updateURL https://github.com/HandyUserscripts/AntiAdware/AntiAdware.meta.js
-// @downloadURL https://github.com/HandyUserscripts/AntiAdware/AntiAdware.user.js
+// @updateURL https://github.com/HandyUserscripts/AntiAdware/raw/latest/AntiAdware.meta.js
+// @downloadURL https://github.com/HandyUserscripts/AntiAdware/raw/latest/AntiAdware.user.js
 
 
 // @run-at document-start
