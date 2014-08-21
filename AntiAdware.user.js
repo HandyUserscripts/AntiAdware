@@ -5,7 +5,7 @@
 // @icon https://i.imgur.com/tq7PJr0.png
 // @description Remove forced download accelerators, managers, and adware on supported websites
 // @version 1.25.1
-// @license The Unlicense
+// @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
 // @require http://code.jquery.com/jquery-2.0.3.min.js
