@@ -2,6 +2,13 @@
 
 Avoid to get **unwanted applications** while downloading **on many websites** with **AntiAdware**! (also known as **Adware Atomizer**)
 
+# Screenshots
+*Click on a screenshot to view it larger*
+[![No unwanted additional download on the Adobe Flash Player download page](https://i.imgur.com/0JCE7DVh.png "No unwanted additional download on the Adobe Flash Player download page")](https://i.imgur.com/0JCE7DV.png)
+---------------------------------------
+[![No adware on Billionuploads](https://i.imgur.com/38XOaQfh.png "No adware on Billionuploads")](https://i.imgur.com/38XOaQf.png)
+
+
 # Prepare for installation
 
 - ![](https://i.imgur.com/zD5npRg.png) **Firefox**
