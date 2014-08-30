@@ -241,7 +241,7 @@ function () {
         Hugefiles: {
             host: ['hugefiles.net'],
             uncheck: ['#dap','#use_downloader'],
-            hide: ["span:contains('using download accelerator')", '#dap', '#use_downloader']
+            hide: ["span:contains('using download accelerator')", '#dap', '#use_downloader', 'img[src="http://hugefiles.net/button.png"]']
         },
         Hulkload: {
             host: ['hulkload.com'],
