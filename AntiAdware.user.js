@@ -323,7 +323,7 @@ function () {
         Secureupload: {
         	host: ['secureupload.eu'],
         	uncheck: ['form[name=dlmanager] > input:checkbox'],
-        	hide: ['form[name=dlmanager]']
+        	hide: ['form[name=dlmanager]', 'img[src="https://www.secureupload.eu/gfx/dlbtn.png"]', 'img[src="https://www.secureupload.eu/gfx/freedl.png"]']
         },
         Sendspace: {
             host: ['sendspace.com'],
