@@ -359,9 +359,9 @@ function () {
         },
         Solidfiles: {
         	host: ['solidfiles.com'],
-        	hide: ['#download-button'],
+        	hide: ['#download-button.dlmanager-download'],
             exec: function() {
-                $('#direct-download-link').prop('class', 'ui-button small green priority-download dlmanager-download')
+                $('#direct-download-link').prop('class', 'ui-button small green priority-download')
             }
         },
         Sourceforge: {
