@@ -47,4 +47,4 @@ See [here](https://github.com/HandyUserscripts/AntiAdware/wiki/Supported-Website
 
 After that you correctly prepared the installation, you can download the script here:
 
-**Download AntiAdware:** [![](https://i.imgur.com/0KCjrsZ.png)](https://github.com/HandyUserscripts/AntiAdware/raw/latest/AntiAdware.user.js)
+**Download AntiAdware:** [![](https://i.imgur.com/0KCjrsZ.png)](https://bit.ly/AntiAdware)
