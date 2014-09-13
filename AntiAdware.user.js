@@ -4,7 +4,7 @@
 // @namespace HandyUserscripts
 // @icon https://i.imgur.com/tq7PJr0.png
 // @description Remove forced download accelerators, managers, and adware on supported websites
-// @version 1.25.2
+// @version 1.25.3
 // @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
@@ -61,8 +61,8 @@
 // @grant unsafeWindow
 
 // @homepageURL https://github.com/HandyUserscripts/AntiAdware
-// @updateURL https://github.com/HandyUserscripts/AntiAdware/raw/latest/AntiAdware.meta.js
-// @downloadURL https://github.com/HandyUserscripts/AntiAdware/raw/latest/AntiAdware.user.js
+// @updateURL https://raw.githubusercontent.com/HandyUserscripts/AntiAdware/master/AntiAdware.meta.js
+// @downloadURL https://raw.githubusercontent.com/HandyUserscripts/AntiAdware/master/AntiAdware.user.js
 
 
 // @run-at document-start
@@ -405,7 +405,7 @@ function () {
         Tusfiles: {
             host: ['tusfiles.net'],
             uncheck: ['input:checkbox[name=quick]'],
-            hide: ['input:checkbox[name=quick] ~ label', 'input:checkbox[name=quick]','a[target=_blank][href*="http://sharesuper.info/"]']
+            hide: ['input:checkbox[name=quick] ~ label', 'input:checkbox[name=quick]','a[target=_blank][href*="http://sharesuper.info/"],img[src="https://z.tusfiles.net/i/dll.png"]']
         },
         Uploading: {
             host: ['uploading.com'],
