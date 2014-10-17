@@ -27,6 +27,7 @@
 // @include http://de.download.cnet.com/*
 // @include http://extabit.com/file/*
 // @include http*://*filefactory.com/file/*
+// @include http*://*filehippo.com/*download*
 // @include http://fileom.com/*
 // @include http://*filesfrog.net/*
 // @include http://*freewarefiles.com/downloads_counter.php*
@@ -35,7 +36,7 @@
 // @include http://hugefiles.net/*
 // @include http://hulkload.com/*
 // @include http://*kingfiles.net/*
-// @include http*://*letitbit.net/download3.php*
+// @include http*://*letitbit.net/download/*
 // @include http://megafiles.se/*
 // @include http://mightyupload.com/*
 // @include http://mp3juices.com/*
@@ -47,6 +48,7 @@
 // @include http://*secureupload.eu/*
 // @include http://*sendspace.com/file/*
 // @include http://*sharebeast.com/*
+// @include http://shared.com/*
 // @include http://*.softonic.*
 // @include http://*solidfiles.com/d/*
 // @include http*://sourceforge.net/*

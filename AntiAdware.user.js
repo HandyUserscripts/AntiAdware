@@ -62,7 +62,7 @@
 
 // @grant unsafeWindow
 
-// @homepageURL https://github.com/HandyUserscripts/AntiAdware
+// @homepageURL https://github.com/HandyUserscripts/AntiAdware#readme
 // @updateURL https://raw.githubusercontent.com/HandyUserscripts/AntiAdware/master/AntiAdware.meta.js
 // @downloadURL https://raw.githubusercontent.com/HandyUserscripts/AntiAdware/master/AntiAdware.user.js
 
