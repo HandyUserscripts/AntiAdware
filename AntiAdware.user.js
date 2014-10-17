@@ -27,6 +27,7 @@
 // @include http://de.download.cnet.com/*
 // @include http://extabit.com/file/*
 // @include http*://*filefactory.com/file/*
+// @include http*://*filehippo.com/*download*
 // @include http://fileom.com/*
 // @include http://*filesfrog.net/*
 // @include http://*freewarefiles.com/downloads_counter.php*
@@ -314,6 +315,18 @@ function () {
                 var newDownloadLink = 'http://dl.opensubtitles.org/'+ currLang +'/download/sub/'+ currSubId
                 // Replace the download link with the one that we have built
                 $('#bt-dwl').attr('href', newDownloadLink)
+            }
+        },
+        Filehippo: {
+            host: ['filehippo.com'],
+            // Will do nothing on pages without a download manager
+            hide: ['#program-header-download-link-dm-text', '#direct-download-link-container'],
+            exec: function() {
+                var adwObj = $('.program-header-download-link.download-manager-enabled')
+                // Append ?direct at the end of the URL so that it doesn't provide the download manager
+                var directUrl = adwObj.attr('href') + '?direct'
+
+                adwObj.attr('href', directUrl)
             }
         },
         Romhustler: {
