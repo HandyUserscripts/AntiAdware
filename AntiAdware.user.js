@@ -36,7 +36,7 @@
 // @include http://hugefiles.net/*
 // @include http://hulkload.com/*
 // @include http://*kingfiles.net/*
-// @include http*://*letitbit.net/download3.php*
+// @include http*://*letitbit.net/download/*
 // @include http://megafiles.se/*
 // @include http://mightyupload.com/*
 // @include http://mp3juices.com/*
@@ -261,8 +261,8 @@ function () {
         },
         Letitbit: {
             host: ['letitbit.net'],
-            uncheck: ['#skymonk_checkbox > input:checkbox'],
-            hide: ['#skymonk_checkbox', '.page-content-wrapper > .row > .wrapper-centered > .centered[style="width:480px"]']
+            uncheck: ['#skymonk_checkbox'],
+            hide: ['#skymonk_checkbox', 'label[for=skymonk_checkbox]']
         },
         Megafiles: {
             host: ['megafiles.se'],
