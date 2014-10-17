@@ -47,6 +47,7 @@
 // @include http://*secureupload.eu/*
 // @include http://*sendspace.com/file/*
 // @include http://*sharebeast.com/*
+// @include http://shared.com/*
 // @include http://*.softonic.*
 // @include http://*solidfiles.com/d/*
 // @include http*://sourceforge.net/*
@@ -334,6 +335,11 @@ function () {
             host: ['sharebeast.com'],
             uncheck: ['#sharebeast_downloader'],
             hide: ['#sharebeast_downloader_container']
+        },
+        Shared: {
+            host: ['shared.com'],
+            uncheck: ['#use-manager'],
+            hide: ['#webpick-option']
         },
         Softonic: {
             host: ['.softonic.'],
