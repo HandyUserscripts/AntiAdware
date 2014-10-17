@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name AntiAdware
-// @name-fr AntiAdware
+// @name:fr AntiAdware
 // @author noname120
 // @namespace HandyUserscripts
 // @icon https://i.imgur.com/tq7PJr0.png
 // @description Remove forced download accelerators, managers, and adware on supported websites
-// @description-fr Évitez de télécharger des gestionnaires/accélérateurs de téléchargement, et des logiciels publicitaires sur de nombreux sites !
+// @description:fr Évitez de télécharger des gestionnaires/accélérateurs de téléchargement, et des logiciels publicitaires sur de nombreux sites !
 // @version 1.26.1
 // @license Creative Commons BY-NC-SA
 
