@@ -17,31 +17,31 @@ Jetez un coup d'œil [ici](https://github.com/HandyUserscripts/AntiAdware/wiki/S
 # Préparation pour l'installation
 
 - ![](https://i.imgur.com/zD5npRg.png) **Firefox**
- - Installez [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) ou [Scriptish Nightly](https://github.com/scriptish/scriptish-nightlies/releases) (les versions stables actuelles de Scriptish ne sont pas compatibles)
- - Puis téléchargez le script
+  - Installez [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) ou [Scriptish Nightly](https://github.com/scriptish/scriptish-nightlies/releases) (les versions stables actuelles de Scriptish ne sont pas compatibles)
+  - Puis téléchargez le script
 
 - ![](https://i.imgur.com/IVru2Aw.png) **Chrome/Chromium**
- - Installez [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo/)
- - Puis téléchargez le script
+  - Installez [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo/)
+  - Puis téléchargez le script
 
- *ou (déconseillé)*
+    **ou** *(déconseillé)*
 
- - Téléchargez ce script sur votre ordinateur
- - Allez dans le [gestionnaire d'extensions](https://i.imgur.com/8ALV1pq.png)
- - Attrapez le script téléchargé et déposez-le au milieu de la fenête du gestionnaire d'extensions
- - N'oubliez pas de refaire ces étapes régulièrement pour garder une version à jour du script !
+  - Téléchargez ce script sur votre ordinateur
+  - Allez dans le [gestionnaire d'extensions](https://i.imgur.com/8ALV1pq.png)
+  - Attrapez le script téléchargé et déposez-le au milieu de la fenête du gestionnaire d'extensions
+  - N'oubliez pas de refaire ces étapes régulièrement pour garder une version à jour du script !
 
 - ![](https://i.imgur.com/P1R4aMx.png) **Opera**
- - Installez [Violentmonkey](https://addons.opera.com/en/extensions/details/violent-monkey/)
- - Puis téléchargez le script
+  - Installez [Violentmonkey](https://addons.opera.com/en/extensions/details/violent-monkey/)
+  - Puis téléchargez le script
 
 - ![](https://i.imgur.com/pUhViGt.png) **Safari**
- - Installez [Ninjakit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
- - Puis téléchargez le script
+  - Installez [Ninjakit](http://ss-o.net/safari/extension/NinjaKit.safariextz)
+  - Puis téléchargez le script
 
 - ![](https://i.imgur.com/DDd2ihc.png) **Android**
- - Installez [Tampermonkey](https://play.google.com/store/apps/details?id=net.biniok.tampermonkey)
- - Puis dans l'application Tampermonkey, téléchargez le script
+  - Installez [Tampermonkey](https://play.google.com/store/apps/details?id=net.biniok.tampermonkey)
+  - Puis dans l'application Tampermonkey, téléchargez le script
 
 # Installation
 
