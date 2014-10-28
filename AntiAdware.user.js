@@ -3,6 +3,7 @@
 // @name:fr AntiAdware
 // @name:de AntiAdware
 // @name:zh-TW AntiAdware
+// @name:zh-CN AntiAdware
 // @author noname120
 // @namespace HandyUserscripts
 // @icon https://i.imgur.com/tq7PJr0.png
@@ -10,6 +11,7 @@
 // @description:fr Évitez de télécharger des gestionnaires/accélérateurs de téléchargement, et des logiciels publicitaires sur de nombreux sites !
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
+// @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
 // @version 1.26.1
 // @license Creative Commons BY-NC-SA
 
