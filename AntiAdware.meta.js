@@ -12,7 +12,7 @@
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
-// @version 1.26.1
+// @version 1.26.2
 // @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
@@ -49,7 +49,7 @@
 // @include http://mightyupload.com/*
 // @include http://mp3juices.com/*
 // @include http://*mp3olimp.net/*
-// @include http://mrtzcmp3.net/*
+// @include http*://mrtzc.ch/*
 // @include http://*opensubtitles.org/*/subtitles/*
 // @include http://romhustler.net/download/*
 // @include http://romhustler.net/rom/*

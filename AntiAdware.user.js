@@ -12,7 +12,7 @@
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
-// @version 1.26.1
+// @version 1.26.2
 // @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
@@ -49,7 +49,7 @@
 // @include http://mightyupload.com/*
 // @include http://mp3juices.com/*
 // @include http://*mp3olimp.net/*
-// @include http://mrtzcmp3.net/*
+// @include http*://mrtzc.ch/*
 // @include http://*opensubtitles.org/*/subtitles/*
 // @include http://romhustler.net/download/*
 // @include http://romhustler.net/rom/*
@@ -294,22 +294,9 @@ function () {
         	hide: ['#download-manager']
         },
         Mrtzcmp3: {
-            host: ['mrtzcmp3.net'],
-            hide: ['#adf ~ select', '#adf',"span#sqinfo ~ table#macTable"],
-            // Find the real download link, replace the fake with the real
-            exec: function () {
-            	var selectElem = $('#adf ~ select')
-
-            	// Disable the interstitial page
-            	selectElem.val('0')
-            	selectElem.trigger('onchange')
-
-            	// Get the real link
-            	var realLink = $('#adf').prop('href')
-
-            	// Replace the fake button with the real link
-            	$('td[align=left][style="padding-top: 16px; padding-left: 5px; "] > a').attr("href", realLink);
-            }
+            host: ['mrtzc.ch'],
+            hide: ["span[id^='old_']", "#playingtext"],
+            show: ["span[id^='new_']"]
         },
         Opensubtitles: {
             host: ['opensubtitles.org'],
@@ -574,6 +561,15 @@ function () {
         return true
     }
 
+    // Force an element to show
+    function show(JQobject) {
+        if (!exists(JQobject)) return false
+
+        // FIXME: avoid to blindly set the display to block (can be inline too)
+        JQobject.attr("style", "display : block !important")
+        return true
+    }
+
     for (var i in adwareRules) {
         // Create a RegExp to test if we are on this domain
         var testHosts = new RegExp(adwareRules[i].host.join('|'), 'i')
@@ -641,6 +637,25 @@ function () {
                         // Otherwise, we continue to try hiding it      
                     }, 100)
                 }
+            })
+        }
+
+        // If there is something to show
+        if (currRule.show != undefined) {
+            // Iterate each show to show it
+            $.each(currRule.show, function (key, currShow) {
+                log("Trying to show " + currShow)
+
+                // If the object to show was successfully shown
+                if (show($(currShow))) return
+
+                // Try to show it later
+                var periodicShow = setInterval(function () {
+                    show($(currShow))
+                    // If the show succeeded this time, we stop to try showing it
+                    if (show($(currShow))) clearInterval(periodicShow)
+                    // Otherwise, we continue to try showing it      
+                }, 100)
             })
         }
     }
