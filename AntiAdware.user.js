@@ -12,7 +12,7 @@
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
-// @version 1.27.3
+// @version 1.27.4
 // @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
@@ -262,8 +262,13 @@ function () {
         },
         Hulkload: {
             host: ['hulkload.com'],
-            uncheck: ['#spnsrdld'],
-            hide: ["form:contains('download The FREE download accelerator')",'#spnsrdld']
+            uncheck: ['#spnsrdld', '#use-manager'],
+            hide: [
+            	"form:contains('download The FREE download accelerator')",'#spnsrdld','#download-tick',
+            	'img[src^="http://hulkload.com/images/dld"]', // Fake download button
+            	'div.alert[onclick="goto()"]', // Fake sponsored links
+            	'div[style*="height: 90px; border: 3px solid rgb(205, 240, 246)"]' // Fake download banner (liversely)
+            ]
         },
         Kingfiles: {
             host: ['kingfiles.net'],
