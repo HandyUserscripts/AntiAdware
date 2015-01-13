@@ -181,7 +181,7 @@ function () {
         DevHost: {
             host: ['d-h.st'],
             uncheck: ['#dm-check'],
-            hide: ['#downloadmanager','a:has(>img[src*="/assets/img/download1.png"])'],
+            hide: ['#downloadmanager','a:has(>img[src*="/assets/img/download1.png"])', '#downloadfile2'],
         },
         Download: {
             host: ['download.cnet.com','telecharger.cnet.com','descargar.cnet.com'],
