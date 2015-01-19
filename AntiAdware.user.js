@@ -12,7 +12,7 @@
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
-// @version 1.28.0
+// @version 1.28.1
 // @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
@@ -398,8 +398,25 @@ function () {
         },
         Sourceforge: {
             host: ['sourceforge.net'],
-            hide: ['.direct-dl', '.info-circle'],
+            hide: ['.direct-dl', '.info-circle', '.btn-ddl-toggle'],
             exec: function() {
+            	// Hotfix: if the user is on an adware-bundled download page
+            	if (document.location.pathname.contains('/download') && !document.location.search.contains('nowrap')) {
+            		// Add the argument as first argument (?) or secondary argument (&)
+            		var prefix = document.location.search.contains('?')? '&' : '?';
+            		document.location.search = document.location.search + prefix + 'nowrap';
+            	}
+
+            	try {
+	            	// Seen in browsing files pages
+	            	var toggleBtn = $('a.btn-ddl-toggle');
+	            	// In case the text contains the pattern telling to the user that adware is enabled
+	            	if (exists(toggleBtn) && toggleBtn.html().contains(toggleBtn.attr('data-content-nowrap'))) {
+	            		// We disable it
+	            		unsafeWindow.$('a.btn-ddl-toggle').click();
+	            	}
+	            } catch (e) {}
+
             	// --> This is for program pages
             	// Try to get the real link
             	var realLink = $('.direct-dl').prop('href')
