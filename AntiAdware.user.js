@@ -40,7 +40,7 @@
 // @include http://fileom.com/*
 // @include http://*filesfrog.net/*
 // @include http://*freewarefiles.com/downloads_counter.php*
-// @include http://*google.*/intl/*/earth/download/ge/agree.html
+// @include http://*google.*/earth/download/ge/agree.html
 // @include http://hipfile.com/*
 // @include http://*hugefiles.net/*
 // @include http://hulkload.com/*
