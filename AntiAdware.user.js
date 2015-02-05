@@ -191,15 +191,15 @@ function () {
         },
         Download: {
             host: ['download.cnet.com','telecharger.cnet.com','descargar.cnet.com'],
-            hide: ['.dlmNotice.dlButtonMsg','#loggedInUserDlLink'],
+            hide: ['.dln-sub-message','#title-detail-download-now-button-dlm-notice-icon','.download-now.direct-download-button-dln'],
             exec: function() {
                 // --> This is for program pages
                 // Find the real download link
-                var adwarelessLink = $('#loggedInUserDlLink').prop('href')
+                var adwarelessLink = $('.download-now.floating-button-dln').attr('data-nodlm-url')
                 // If we successfully found it
                 if (typeof adwarelessLink != 'undefined') {
                     // We replace the adware-enabled link with the adwareless link
-                    $("a.small:has('.dlNowCTA')").prop('href', adwarelessLink)
+                    $("a.dln-a:has('.dln-cta')").prop('href', adwarelessLink)
                 }
 
                 // --> This is for search lists
