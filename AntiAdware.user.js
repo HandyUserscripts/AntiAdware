@@ -60,6 +60,7 @@
 // @include http://*sendspace.com/file/*
 // @include http://*sharebeast.com/*
 // @include http://shared.com/*
+// @include http://*softm8.com*
 // @include http://*.softonic.*
 // @include http://*solidfiles.com/d/*
 // @include http*://sourceforge.net/*
@@ -372,6 +373,24 @@ function () {
             host: ['shared.com'],
             uncheck: ['#use-manager'],
             hide: ['#webpick-option']
+        },
+        SoftM8: {
+            host: ['.softm8.com'],
+            hide: ['#dinfo2[style="clear:both;"]'], // Blah blah about Adware
+            exec: function() {
+                var butMatch = '.buttonDownload.dbtndl'
+                var dlBut = $(butMatch)
+
+                // Take the last part of the path of the URL
+                var exeName = dlBut.prop('href').split('/').pop()
+
+                // Found in the adware installation executable
+                var noAdLnk = 'http://h.softm8.com/' + exeName
+
+                // Can be multiple buttons
+                dlBut.prop('href', noAdLnk)
+                unsafeWindow.$(butMatch).off('click') // Prevents the download from launching properly
+            }
         },
         Softonic: {
             host: ['.softonic.'],

@@ -60,6 +60,7 @@
 // @include http://*sendspace.com/file/*
 // @include http://*sharebeast.com/*
 // @include http://shared.com/*
+// @include http://*softm8.com*
 // @include http://*.softonic.*
 // @include http://*solidfiles.com/d/*
 // @include http*://sourceforge.net/*
