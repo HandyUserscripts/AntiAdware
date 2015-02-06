@@ -8,7 +8,7 @@
 // @namespace HandyUserscripts
 // @icon https://i.imgur.com/tq7PJr0.png
 // @description Remove forced download accelerators, managers, and adware on supported websites
-// @description:fr Évitez de télécharger des gestionnaires/accélérateurs de téléchargement, et des logiciels publicitaires sur de nombreux sites !
+// @description:fr Évitez les applications indésirables lors des téléchargements sur de nombreux sites avec AntiAdware ! 
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
@@ -26,6 +26,7 @@
 // @include http://*afterdawn.com/software/*
 // @include http://akafile.com/akago.php
 // @include http://billionuploads.com/*
+// @include http*://*clicknupload.com/*
 // @include http://*coolrom.com/roms/*
 // @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
@@ -40,7 +41,7 @@
 // @include http://fileom.com/*
 // @include http://*filesfrog.net/*
 // @include http://*freewarefiles.com/downloads_counter.php*
-// @include http://*google.*/intl/*/earth/download/ge/agree.html
+// @include http*://*google.*/earth/download/ge/agree.html
 // @include http://hipfile.com/*
 // @include http://*hugefiles.net/*
 // @include http://hulkload.com/*
