@@ -50,6 +50,7 @@
 // @include http*://up.media1fire.com/*
 // @include http://megafiles.se/*
 // @include http://mightyupload.com/*
+// @include http://*mp3fil.*/get/*
 // @include http://mp3juices.com/*
 // @include http://*mp3olimp.net/*
 // @include http*://mrtzc.ch/*
@@ -306,6 +307,11 @@ function () {
             host: ['mightyupload.com'],
             uncheck: ['#use_installer'],
             hide: ['#use_installer', 'label[for=use_installer]','#lnk_download ~ br']
+        },
+        Mp3fil: {
+            host: ['mp3fil\.'],
+            uncheck: ['#check > input:checkbox[name=check]'],
+            hide: ['#check']
         },
         Mp3juices: {
             host: ['mp3juices.com'],

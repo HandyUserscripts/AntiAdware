@@ -50,6 +50,7 @@
 // @include http*://up.media1fire.com/*
 // @include http://megafiles.se/*
 // @include http://mightyupload.com/*
+// @include http://*mp3fil.*/get/*
 // @include http://mp3juices.com/*
 // @include http://*mp3olimp.net/*
 // @include http*://mrtzc.ch/*
