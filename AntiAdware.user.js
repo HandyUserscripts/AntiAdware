@@ -422,9 +422,9 @@ function () {
         },
         Solidfiles: {
         	host: ['solidfiles.com'],
-        	hide: ['#download-button.dlmanager-download'],
+        	hide: ['#dlm-btn'],
             exec: function() {
-                $('#direct-download-link').prop('class', 'ui-button small green priority-download')
+                $('#ddl-text').prop('class', 'ui-button small green dlm-dl dl-btn')
             }
         },
         Sourceforge: {
