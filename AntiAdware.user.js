@@ -363,7 +363,15 @@ function () {
         Secureupload: {
         	host: ['secureupload.eu'],
         	uncheck: ['form[name=dlmanager] > input:checkbox'],
+        	optuncheck: {
+                // Never stop to try unchecking the checkbox
+                constantcheck: true
+            },
         	hide: ['form[name=dlmanager]', 'img[src="https://www.secureupload.eu/gfx/dlbtn.png"]', 'img[src="https://www.secureupload.eu/gfx/freedl.png"]']
+        	opthide: {
+                // Never stop to try hiding the object
+                constantcheck: true
+            }
         },
         Sendspace: {
             host: ['sendspace.com'],
