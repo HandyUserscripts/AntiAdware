@@ -157,10 +157,10 @@ function () {
             host: ['coolrom.com'],
             hide: ['div.header + * + * > table[align="center"]'],
             exec: function() {
-                var downloadButton = $('a[href^="/downloader.php"]')
+                var downloadButton = $('a[href^="/downloader_test.php"]')
                 var adwareLink = downloadButton.prop('href')
                 if (typeof adwareLink != 'undefined') {
-                    var adwarelessLink = adwareLink.replace('downloader.php', 'dlpop.php')
+                    var adwarelessLink = adwareLink.replace('downloader_test.php', 'dlpop.php')
                     downloadButton.prop('href', adwarelessLink)
                 }
             }
