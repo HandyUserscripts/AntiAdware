@@ -27,7 +27,7 @@
 // @include http://akafile.com/akago.php
 // @include http://billionuploads.com/*
 // @include http*://*clicknupload.com/*
-// @include http://*coolrom.com/roms/*
+// @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
 // @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
@@ -161,7 +161,7 @@ function () {
         },
         Coolrom: {
             host: ['coolrom.com'],
-            hide: ['div.header + * + * > table[align="center"]'],
+            hide: ['table[align="center"][width="300"]'],
             exec: function() {
                 var downloadButton = $('a[href^="/downloader.php"]')
                 var adwareLink = downloadButton.prop('href')
@@ -169,6 +169,9 @@ function () {
                     var adwarelessLink = adwareLink.replace('downloader.php', 'dlpop.php')
                     downloadButton.prop('href', adwarelessLink)
                 }
+
+                // Avoid the HTML page to be triggered as a download
+                downloadButton.removeAttr('download')
             }
         },
         Datafilehost: {

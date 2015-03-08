@@ -27,7 +27,7 @@
 // @include http://akafile.com/akago.php
 // @include http://billionuploads.com/*
 // @include http*://*clicknupload.com/*
-// @include http://*coolrom.com/roms/*
+// @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
 // @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
