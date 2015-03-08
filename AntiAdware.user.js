@@ -19,13 +19,11 @@
 // @require http://code.jquery.com/jquery-2.0.3.min.js
 
 // @include http://180upload.com/*
-// @include http://180upload.nl/*
 // @include http://4upfiles.com/*
 // @include http*://get*.adobe.com/*flashplayer/*
 // @include http*://get*.adobe.com/*reader/*
 // @include http://*afterdawn.com/software/*
 // @include http://akafile.com/akago.php
-// @include http://billionuploads.com/*
 // @include http*://*clicknupload.com/*
 // @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
@@ -36,25 +34,18 @@
 // @include http://telecharger.cnet.com/*
 // @include http://descargar.cnet.com/*
 // @include http://de.download.cnet.com/*
-// @include http://extabit.com/file/*
 // @include http*://*filefactory.com/file/*
 // @include http*://*filehippo.com/*download*
-// @include http://fileom.com/*
-// @include http://*filesfrog.net/*
 // @include http://*freewarefiles.com/downloads_counter.php*
 // @include http*://*google.*/earth/download/ge/agree.html
-// @include http://hipfile.com/*
 // @include http://*hugefiles.net/*
 // @include http://hulkload.com/*
 // @include http://*kingfiles.net/*
 // @include http*://*letitbit.net/download/*
 // @include http*://up.media1fire.com/*
-// @include http://megafiles.se/*
 // @include http://mightyupload.com/*
 // @include http://*mp3fil.*/get/*
-// @include http://mp3juices.com/*
 // @include http://*mp3olimp.net/*
-// @include http*://mrtzc.ch/*
 // @include http://*opensubtitles.org/*/subtitles/*
 // @include http://romhustler.net/download/*
 // @include http://romhustler.net/rom/*
@@ -92,11 +83,6 @@ function () {
 
     // Rules informing what to do on each supported website
     var adwareRules = {
-        a180upload: {
-            host: ['180upload.com'],
-            uncheck: ['#use_installer'],
-            hide: ['#use_installer', 'label[for=use_installer]']
-        },
         a4upfiles: {
             host: ['4upfiles.com'],
             uncheck: ['#use_downloader'],
@@ -138,15 +124,6 @@ function () {
                         return
                     }
                 });
-            }
-        },
-        Billionuploads: {
-            host: ['billionuploads.com'],
-            uncheck: ['#download-type'],
-            hide: ['.pre-download.center', '.download-type'],
-            opthide: {
-                // Never stop to try hiding the object
-                constantcheck: true
             }
         },
         Clicknupload: {
@@ -233,25 +210,10 @@ function () {
                     })
             }
         },
-        Extabit: {
-            host: ['extabit.com'],
-            uncheck: ['#dlmanager'],
-            hide: ['td[align=right][style="padding-top:12px;font-size:9pt;width: 350px;"]']
-        },
         Filefactory: {
             host: ['filefactory.com'],
             uncheck: ['#download_manager > input:checkbox'],
             hide: ['#download_manager']
-        },
-        Filesfrog: {
-            host: ['filesfrog.net'],
-            uncheck: ['#BI_downloader'],
-            hide: ['label[for=BI_downloader]']
-        },
-        Fileom: {
-            host: ['fileom.com'],
-            uncheck: ['#dlm'],
-            hide: ['td[align=center][style="padding-left:220px"]']
         },
         Freewarefiles: {
             host: ['freewarefiles.com'],
@@ -267,11 +229,6 @@ function () {
         	host: ['google.'],
         	uncheck: ['#dl-agree-chrome','#dl-agree-chrome-default'],
         	hide: ['#dl-chrome-promo']
-        },
-        Hipfile: {
-            host: ['hipfile.com'],
-            uncheck: ['#chlink'],
-            hide: ['#chlink', 'label[for=chlink]']
         },
         Hugefiles: {
             host: ['hugefiles.net'],
@@ -307,11 +264,6 @@ function () {
             uncheck: ['#use-manager'],
             hide: ['#download-box', '#sponsor2', 'div.contentor > center', '.alert2']
         },
-        Megafiles: {
-            host: ['megafiles.se'],
-            uncheck: ['#cmli_downloader'],
-            hide: ['#cmli_downloader', 'label[for=cmli_downloader]']
-        },
         Mightyupload: {
             host: ['mightyupload.com'],
             uncheck: ['#use_installer'],
@@ -322,20 +274,10 @@ function () {
             uncheck: ['#check > input:checkbox[name=check]'],
             hide: ['#check']
         },
-        Mp3juices: {
-            host: ['mp3juices.com'],
-            uncheck: ['input:checkbox[name=dl_manager]'],
-            hide: ['.dl_manager']
-        },
         Mp3olimp: {
         	host: ['mp3olimp.net'],
         	uncheck: ['#download-manager-checkbox'],
         	hide: ['#download-manager']
-        },
-        Mrtzcmp3: {
-            host: ['mrtzc.ch'],
-            hide: ["span[id^='old_']", "#playingtext"],
-            show: ["span[id^='new_']"]
         },
         Opensubtitles: {
             host: ['opensubtitles.org'],
