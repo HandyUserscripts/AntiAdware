@@ -28,6 +28,7 @@
 // @include http://billionuploads.com/*
 // @include http*://*clicknupload.com/*
 // @include http://*coolrom.com/roms/*
+// @include http://*clipconverter.cc/download/*
 // @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
 // @include http://d-h.st/*

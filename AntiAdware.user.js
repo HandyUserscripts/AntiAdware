@@ -28,6 +28,7 @@
 // @include http://billionuploads.com/*
 // @include http*://*clicknupload.com/*
 // @include http://*coolrom.com/roms/*
+// @include http://*clipconverter.cc/download/*
 // @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
 // @include http://d-h.st/*
@@ -152,6 +153,11 @@ function () {
             host: ['clicknupload.com'],
             uncheck: ['#d_acc_checkbox'],
             hide: ['#w_download', '#d_acc']
+        },
+        ClipConverter: {
+        	host: ['clipconverter.cc'],
+        	uncheck: ['#dlcp'],
+        	hide: ['div[style="width: 340px;margin-left: 25px;margin-top: 7px;"]']
         },
         Coolrom: {
             host: ['coolrom.com'],
