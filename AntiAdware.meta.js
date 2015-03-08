@@ -58,7 +58,7 @@
 // @include http://*opensubtitles.org/*/subtitles/*
 // @include http://romhustler.net/download/*
 // @include http://romhustler.net/rom/*
-// @include http://*secureupload.eu/*
+// @include http*://*secureupload.eu/*
 // @include http://*sendspace.com/file/*
 // @include http://*sharebeast.com/*
 // @include http://shared.com/*

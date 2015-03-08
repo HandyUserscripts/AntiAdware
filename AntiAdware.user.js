@@ -58,7 +58,7 @@
 // @include http://*opensubtitles.org/*/subtitles/*
 // @include http://romhustler.net/download/*
 // @include http://romhustler.net/rom/*
-// @include http://*secureupload.eu/*
+// @include http*://*secureupload.eu/*
 // @include http://*sendspace.com/file/*
 // @include http://*sharebeast.com/*
 // @include http://shared.com/*
@@ -376,7 +376,7 @@ function () {
                 // Never stop to try unchecking the checkbox
                 constantcheck: true
             },
-        	hide: ['form[name=dlmanager]', 'img[src="https://www.secureupload.eu/gfx/dlbtn.png"]', 'img[src="https://www.secureupload.eu/gfx/freedl.png"]']
+        	hide: ['form[name=dlmanager]', 'img[src="https://www.secureupload.eu/gfx/dlbtn.png"]', 'img[src="https://www.secureupload.eu/gfx/freedl.png"]'],
         	opthide: {
                 // Never stop to try hiding the object
                 constantcheck: true
