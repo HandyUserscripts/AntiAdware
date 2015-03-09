@@ -46,6 +46,7 @@
 // @include http://mightyupload.com/*
 // @include http://*mp3fil.*/get/*
 // @include http://*mp3olimp.net/*
+// @include http://*mp3olimpz.com/*
 // @include http://*opensubtitles.org/*/subtitles/*
 // @include http://romhustler.net/download/*
 // @include http://romhustler.net/rom/*
@@ -275,7 +276,7 @@ function () {
             hide: ['#check']
         },
         Mp3olimp: {
-        	host: ['mp3olimp.net'],
+        	host: ['mp3olimp.net|mp3olimpz.com'],
         	uncheck: ['#download-manager-checkbox'],
         	hide: ['#download-manager']
         },
