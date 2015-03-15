@@ -45,6 +45,7 @@
 // @include http*://up.media1fire.com/*
 // @include http://mightyupload.com/*
 // @include http://*mp3fil.*/get/*
+// @include http://mp3juices.to/*
 // @include http://*mp3olimp.net/*
 // @include http://*mp3olimpz.com/*
 // @include http://*opensubtitles.org/*/subtitles/*
