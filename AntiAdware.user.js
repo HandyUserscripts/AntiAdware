@@ -84,6 +84,11 @@ function () {
 
     // Rules informing what to do on each supported website
     var adwareRules = {
+        a180upload: {
+            host: ['180upload.com'],
+            uncheck: ['#use_installer'],
+            hide: ['#use_installer', 'label[for=use_installer]']
+        },
         a4upfiles: {
             host: ['4upfiles.com'],
             uncheck: ['#use_downloader'],
