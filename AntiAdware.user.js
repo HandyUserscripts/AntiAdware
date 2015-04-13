@@ -27,7 +27,6 @@
 // @include http*://*clicknupload.com/*
 // @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
-// @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
 // @include http://d-h.st/*
 // @include http://download.cnet.com/*
@@ -156,15 +155,6 @@ function () {
 
                 // Avoid the HTML page to be triggered as a download
                 downloadButton.removeAttr('download')
-            }
-        },
-        Datafilehost: {
-            host: ['datafilehost.com'],
-            uncheck: ['form[name=cbf] > input:checkbox[name=cb]'],
-            hide: ['form[name=cbf]'],
-            optuncheck: {
-                // Constantly uncheck the checkbox
-                constantcheck: true
             }
         },
         Davvas: {
