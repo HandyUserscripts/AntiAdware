@@ -28,6 +28,7 @@
 // @include http://cloudyvideos.com/*
 // @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
+// @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
 // @include http://d-h.st/*
 // @include http://download.cnet.com/*
