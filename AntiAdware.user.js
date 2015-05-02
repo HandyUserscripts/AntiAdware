@@ -25,6 +25,7 @@
 // @include http://*afterdawn.com/software/*
 // @include http://akafile.com/akago.php
 // @include http*://*clicknupload.com/*
+// @include http://cloudyvideos.com/*
 // @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
 // @include http://*davvas.com/*
@@ -141,6 +142,11 @@ function () {
         	host: ['clipconverter.cc'],
         	uncheck: ['#dlcp'],
         	hide: ['div[style="width: 340px;margin-left: 25px;margin-top: 7px;"]']
+        },
+        CloudyVideos: {
+            host: ['cloudyvideos.com'],
+            uncheck: ['#use-manager'],
+            hide: ['#download-box > label']
         },
         Coolrom: {
             host: ['coolrom.com'],

@@ -25,6 +25,7 @@
 // @include http://*afterdawn.com/software/*
 // @include http://akafile.com/akago.php
 // @include http*://*clicknupload.com/*
+// @include http://cloudyvideos.com/*
 // @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
 // @include http://*davvas.com/*
