@@ -166,11 +166,13 @@ function () {
         },
         Datafilehost: {
             host: ['datafilehost.com'],
-            uncheck: ['form[name=cbf] > input:checkbox[name=cb]'],
             hide: ['form[name=cbf]'],
-            optuncheck: {
-                // Constantly uncheck the checkbox
-                constantcheck: true
+            exec: function() {
+                var id = document.location.pathname.match(/^\/d\/(\w+)$/)[1]
+                var adwarelessLink = document.location.protocol + '//' + document.location.hostname + '/get.php?file=' + id
+
+                // FIXME: this is dirty
+                setInterval(function() {$('#dl > a').prop('href', adwarelessLink)}, 100)
             }
         },
         Davvas: {
