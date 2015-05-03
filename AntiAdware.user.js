@@ -63,6 +63,7 @@
 // @include http*://*tusfiles.net/*
 // @include http://unlimitzone.com/*
 // @include http*://uploading.com/*
+// @include http*://uptobox.com/*
 // @include http://*ziddu.com/downloadfile/*
 
 // We don't use this method, however a side effect of it is that it restores the Greasemonkey sandbox, avoiding jQuery conflicts
@@ -470,6 +471,21 @@ function () {
             host: ['uploading.com'],
             uncheck: ['#force_exe'],
             hide: ['.use_download_manager']
+        },
+        Uptobox: {
+            host: ['uptobox.com'],
+            hide: ['div.reseller > table[align=center]'],
+            exec: function() {
+                var button = $('div.reseller > table[align=center] div[align=center] > a')
+                var adware = button.prop('href')
+
+                // Retrieve the real download link and change the button with this link
+                var download = adware.match(/&product_download_url=([^$&]+)$/)[1]
+                button.prop('href', download)
+
+                // Put the button in a visible location
+                $('#container').append(button)
+            }
         },
         Unlimitzone: {
             host: ['unlimitzone.com'],

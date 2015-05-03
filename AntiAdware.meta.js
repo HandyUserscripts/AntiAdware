@@ -63,6 +63,7 @@
 // @include http*://*tusfiles.net/*
 // @include http://unlimitzone.com/*
 // @include http*://uploading.com/*
+// @include http*://uptobox.com/*
 // @include http://*ziddu.com/downloadfile/*
 
 // We don't use this method, however a side effect of it is that it restores the Greasemonkey sandbox, avoiding jQuery conflicts
