@@ -484,7 +484,7 @@ function () {
                 button.prop('href', download)
 
                 // Put the button in a visible location
-                $('#container').append(button)
+                $('div.reseller > table[align=center]').before(button)
             }
         },
         Unlimitzone: {
