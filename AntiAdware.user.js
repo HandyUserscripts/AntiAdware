@@ -154,11 +154,11 @@ function () {
             host: ['coolrom.com'],
             hide: ['table[align="center"][width="300"]'],
             exec: function() {
-                var downloadButton = $('a[href^="/downloader.php"]')
-                var adwareLink = downloadButton.prop('href')
-                if (typeof adwareLink != 'undefined') {
-                    var adwarelessLink = adwareLink.replace('downloader.php', 'dlpop.php')
-                    downloadButton.prop('href', adwarelessLink)
+                var downloadButton = $('.download_link')
+                var downloadId = document.location.pathname.split('/')[3]
+
+                if (typeof downloadButton != 'undefined' && downloadId.match(/^\d+$/)) {
+                    downloadButton.prop('href', 'http://coolrom.com/dlpop.php?id=' + downloadId)
                 }
 
                 // Avoid the HTML page to be triggered as a download
