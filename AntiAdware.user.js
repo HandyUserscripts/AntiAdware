@@ -43,6 +43,7 @@
 // @include http://hulkload.com/*
 // @include http://*kingfiles.net/*
 // @include http*://*letitbit.net/download/*
+// @include http*://*loveroms.com/*
 // @include http*://up.media1fire.com/*
 // @include http://mightyupload.com/*
 // @include http://*mp3fil.*/get/*
@@ -274,6 +275,11 @@ function () {
             host: ['letitbit.net'],
             uncheck: ['#skymonk_checkbox'],
             hide: ['#skymonk_checkbox', 'label[for=skymonk_checkbox]']
+        },
+        LoveRoms: {
+            host: ['loveroms.com'],
+            uncheck: ['#downloadWithManager'],
+            hide: ['.download-label']
         },
         UpMedia1fire: {
             host: ['up.media1fire.com'],

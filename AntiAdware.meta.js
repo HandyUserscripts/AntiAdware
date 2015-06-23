@@ -43,6 +43,7 @@
 // @include http://hulkload.com/*
 // @include http://*kingfiles.net/*
 // @include http*://*letitbit.net/download/*
+// @include http*://*loveroms.com/*
 // @include http*://up.media1fire.com/*
 // @include http://mightyupload.com/*
 // @include http://*mp3fil.*/get/*
