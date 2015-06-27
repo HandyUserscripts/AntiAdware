@@ -173,8 +173,13 @@ function () {
                 var id = document.location.pathname.match(/^\/d\/(\w+)$/)[1]
                 var adwarelessLink = document.location.protocol + '//' + document.location.hostname + '/get.php?file=' + id
 
-                // FIXME: this is dirty
-                setInterval(function() {$('#dl > a').prop('href', adwarelessLink)}, 100)
+                var n = $('#dl > a').clone()
+
+                // Replace the adware link
+                n.prop('href', adwarelessLink)
+
+                // Avoid redirection to adware
+                $('#dl').replaceWith(n);
             }
         },
         Davvas: {
