@@ -153,7 +153,7 @@ function () {
         },
         Coolrom: {
             host: ['coolrom.com'],
-            hide: ['table[align="center"][width="450"]'],
+            hide: ['table[align="center"][width="300"]'],
             exec: function() {
                 var downloadButton = $('.download_link')
                 var downloadId = document.location.pathname.split('/')[3]
