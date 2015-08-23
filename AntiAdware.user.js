@@ -289,7 +289,7 @@ function () {
         UpMedia1fire: {
             host: ['up.media1fire.com'],
             uncheck: ['#use-manager'],
-            hide: ['#download-box', '#sponsor2', 'div.contentor > center', '.alert2', 'img[src^=http://up.media1fire.com/nb/Rec_b]']
+            hide: ['#download-box', '#sponsor2', 'div.contentor > center', '.alert2', 'img[src^="http://up.media1fire.com/nb/Rec_b"]']
         },
         Mightyupload: {
             host: ['mightyupload.com'],
