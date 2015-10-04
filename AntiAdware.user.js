@@ -28,6 +28,7 @@
 // @include http://cloudyvideos.com/*
 // @include http://*coolrom.com/*/*
 // @include http://*clipconverter.cc/download/*
+// @include http*://*dailyuploads.net/*
 // @include http://*datafilehost.com/d/*
 // @include http://*davvas.com/*
 // @include http://d-h.st/*
@@ -165,6 +166,11 @@ function () {
                 // Avoid the HTML page to be triggered as a download
                 downloadButton.removeAttr('download')
             }
+        },
+        DailyUploads: {
+            host: ['dailyuploads.net'],
+            hide: ['label[style="font-size:x-small"]'],
+            uncheck: ['#chkIsAdd']
         },
         Datafilehost: {
             host: ['datafilehost.com'],
