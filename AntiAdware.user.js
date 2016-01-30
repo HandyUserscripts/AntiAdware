@@ -212,11 +212,13 @@ function () {
             exec: function() {
                 // --> This is for program pages
                 // Find the real download link
-                var adwarelessLink = $('.download-now.floating-button-dln').attr('data-nodlm-url')
+                var adwarelessLink = $('.download-now').attr('data-nodlm-url')
                 // If we successfully found it
                 if (typeof adwarelessLink != 'undefined') {
                     // We replace the adware-enabled link with the adwareless link
-                    $("a.dln-a:has('.dln-cta')").prop('href', adwarelessLink)
+                    var btn = $("a.dln-a:has('.dln-cta')")
+                    btn.prop('href', adwarelessLink)
+                    btn.attr('data-href', adwarelessLink)
                 }
 
                 // --> This is for search lists
