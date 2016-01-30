@@ -52,6 +52,7 @@
 // @include http://*mp3olimp.net/*
 // @include http://*mp3olimpz.com/*
 // @include http://*opensubtitles.org/*/subtitles/*
+// @include http*://revclouds.com/*
 // @include http://romhustler.net/download/*
 // @include http://romhustler.net/rom/*
 // @include http*://*secureupload.eu/*
