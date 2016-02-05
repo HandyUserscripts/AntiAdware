@@ -66,6 +66,7 @@
 // @include http*://*tusfiles.net/*
 // @include http://unlimitzone.com/*
 // @include http*://uploading.com/*
+// @include http*://*uploadshub.com/*
 // @include http*://uptobox.com/*
 // @include http://*ziddu.com/downloadfile/*
 
@@ -496,6 +497,11 @@ function () {
             host: ['uploading.com'],
             uncheck: ['#force_exe'],
             hide: ['.use_download_manager']
+        },
+        UploadsHub:{
+            host: ['uploadshub.com'],
+            uncheck: ['#chkIsAdd'],
+            hide: ['label:contains("download manager")']
         },
         Uptobox: {
             host: ['uptobox.com'],

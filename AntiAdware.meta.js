@@ -66,6 +66,7 @@
 // @include http*://*tusfiles.net/*
 // @include http://unlimitzone.com/*
 // @include http*://uploading.com/*
+// @include http*://*uploadshub.com/*
 // @include http*://uptobox.com/*
 // @include http://*ziddu.com/downloadfile/*
 
