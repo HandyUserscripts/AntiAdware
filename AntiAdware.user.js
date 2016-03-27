@@ -427,10 +427,9 @@ function () {
             }
         },
         Solidfiles: {
-        	host: ['solidfiles.com'],
-        	hide: ['#dlm-btn'],
+            host: ['solidfiles.com'],
             exec: function() {
-                $('#ddl-text').prop('class', 'ui-button small green dlm-dl dl-btn')
+                $('.buttons > .btn.btn-primary.btn-sm').attr('ng-click', null)
             }
         },
         Sourceforge: {
