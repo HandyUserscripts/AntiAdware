@@ -68,6 +68,7 @@
 // @include http*://uploading.com/*
 // @include http*://*uploadshub.com/*
 // @include http*://uptobox.com/*
+// @include http://*userscdn.com/*
 // @include http://*ziddu.com/downloadfile/*
 
 // We don't use this method, however a side effect of it is that it restores the Greasemonkey sandbox, avoiding jQuery conflicts
@@ -521,6 +522,11 @@ function () {
             host: ['unlimitzone.com'],
             uncheck: ['#dlm'],
             hide: ['#dlm ~ b','#dlm']
+        },
+        UsersCDN: {
+            host: ['userscdn.com'],
+            uncheck: ['#chkIsAdd'],
+            hide: ['label:contains("Download manager")']
         },
         Ziddu: {
             host: ['downloads.ziddu.com'],
