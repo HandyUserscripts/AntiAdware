@@ -24,6 +24,7 @@
 // @include http*://get*.adobe.com/*reader/*
 // @include http://*afterdawn.com/software/*
 // @include http://akafile.com/akago.php
+// @include http://*chip.de/downloads/*
 // @include http*://*clicknupload.com/*
 // @include http://cloudyvideos.com/*
 // @include http://*coolrom.com/*/*

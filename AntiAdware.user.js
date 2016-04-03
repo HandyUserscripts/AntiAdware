@@ -24,6 +24,7 @@
 // @include http*://get*.adobe.com/*reader/*
 // @include http://*afterdawn.com/software/*
 // @include http://akafile.com/akago.php
+// @include http://*chip.de/downloads/*
 // @include http*://*clicknupload.com/*
 // @include http://cloudyvideos.com/*
 // @include http://*coolrom.com/*/*
@@ -138,6 +139,16 @@ function () {
                         return
                     }
                 });
+            }
+        },
+        Chip: {
+            host: ['chip.de'],
+            hide: ['.Download-Button-UnderText--Installer'],
+            exec: function() {
+                var dl = $('.ManualInstallLink').prop('href')
+                var btn = $('.dl-btn-default .Download-Button')
+
+                btn.prop('href', dl)
             }
         },
         Clicknupload: {
