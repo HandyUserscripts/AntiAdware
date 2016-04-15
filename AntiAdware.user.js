@@ -512,7 +512,7 @@ function () {
         UploadsHub:{
             host: ['uploadshub.com'],
             uncheck: ['#chkIsAdd'],
-            hide: ['label:contains("download manager")']
+            hide: ['label:contains("manager")']
         },
         Uptobox: {
             host: ['uptobox.com'],
