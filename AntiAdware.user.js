@@ -68,6 +68,7 @@
 // @include http://unlimitzone.com/*
 // @include http*://uploading.com/*
 // @include http*://*uploadshub.com/*
+// @include http*://*uplod.it/*
 // @include http*://uptobox.com/*
 // @include http://*userscdn.com/*
 // @include http://*ziddu.com/downloadfile/*
@@ -513,6 +514,11 @@ function () {
             host: ['uploadshub.com'],
             uncheck: ['#chkIsAdd'],
             hide: ['label:contains("manager")']
+        },
+        Uplod: {
+            host: ['uplod.it'],
+            uncheck: ['#chkIsAdd'],
+            hide: ['center:contains("manager")']
         },
         Uptobox: {
             host: ['uptobox.com'],
