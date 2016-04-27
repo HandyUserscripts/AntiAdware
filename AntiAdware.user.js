@@ -192,7 +192,8 @@ function () {
             hide: ['form[name=cbf]'],
             exec: function() {
                 var id = document.location.pathname.match(/^\/d\/(\w+)$/)[1]
-                var adwarelessLink = document.location.protocol + '//' + document.location.hostname + '/get.php?file=' + id
+                // DataFileHost doesn't allow to download using HTTPS
+                var adwarelessLink = 'http:' + '//' + document.location.hostname + '/get.php?file=' + id
 
                 var n = $('#dl > a').clone()
 
