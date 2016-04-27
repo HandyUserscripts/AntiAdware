@@ -106,7 +106,7 @@ function () {
         },
         Adobe: {
             host: ['get\\d?.adobe.com'],
-            uncheck: ['#offerCheckbox'],
+            uncheck: ['#offerCheckbox','#offerCheckbox1','#offerCheckbox2','#offerCheckbox3','#offerCheckbox4'],
             hide: ['.ContentColumn.ContentColumn-2']
         },
         Afterdawn: {
