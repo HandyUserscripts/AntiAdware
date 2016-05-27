@@ -12,7 +12,7 @@
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
-// @version 1.41.0 
+// @version 1.41.1
 // @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
@@ -63,7 +63,7 @@
 // @include http*://*shared.com/*
 // @include http*://*softm8.com*
 // @include http*://*.softonic.*
-// @include http*://*solidfiles.com/d/*
+// @include http*://*solidfiles.com/*
 // @include http*://*sourceforge.net/*
 // @include http*://*tusfiles.net/*
 // @include http*://*unlimitzone.com/*
@@ -447,8 +447,14 @@ function () {
         },
         Solidfiles: {
             host: ['solidfiles.com'],
+            hide: ['#download-btn'],
             exec: function() {
-                $('.buttons > .btn.btn-primary.btn-sm').attr('ng-click', null)
+                var l = $('#download-btn').prop('href')
+                var btn = $('.buttons > .btn.btn-success.btn-sm')
+                var txt = btn.html()
+                btn.remove()
+                // FIXME: Ugly
+                $('.buttons').append('<a class="btn btn-success btn-sm" href="' + l + '">' + txt + '</a>')
             }
         },
         Sourceforge: {
