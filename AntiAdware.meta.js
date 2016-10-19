@@ -69,7 +69,7 @@
 // @include http*://*unlimitzone.com/*
 // @include http*://*uploading.com/*
 // @include http*://*uplod.ws/*
-// @include http*://*uplod.it/*
+// @include http*://*uploads.to/*
 // @include http*://*uptobox.com/*
 // @include http*://*userscdn.com/*
 // @include http*://*ziddu.com/downloadfile/*

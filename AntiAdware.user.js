@@ -69,7 +69,7 @@
 // @include http*://*unlimitzone.com/*
 // @include http*://*uploading.com/*
 // @include http*://*uplod.ws/*
-// @include http*://*uplod.it/*
+// @include http*://*uploads.to/*
 // @include http*://*uptobox.com/*
 // @include http*://*userscdn.com/*
 // @include http*://*ziddu.com/downloadfile/*
@@ -527,10 +527,10 @@ function () {
             uncheck: ['#chkIsAdd'],
             hide: ['label:contains("offer")','img[src="http://goo.gl/CGHVVo"]']
         },
-        Uplod: {
-            host: ['uplod.it'],
+        Uploads: {
+            host: ['uploads.to'],
             uncheck: ['#chkIsAdd'],
-            hide: ['center:contains("manager")']
+            hide: ['a:contains("MANAGER")','center:contains("Offer")'],
         },
         Uptobox: {
             host: ['uptobox.com'],
