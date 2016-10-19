@@ -63,7 +63,6 @@
 // @include http*://*shared.com/*
 // @include http*://*softm8.com*
 // @include http*://*.softonic.*
-// @include http*://*solidfiles.com/*
 // @include http*://*sourceforge.net/*
 // @include http*://*tusfiles.net/*
 // @include http*://*unlimitzone.com/*
@@ -443,18 +442,6 @@ function () {
                 setInterval(function() {unsafeWindow.$('#download-button-sd, #download-button').off('click')}, 100)
 
                 managerButton.prop('href', directLink)
-            }
-        },
-        Solidfiles: {
-            host: ['solidfiles.com'],
-            hide: ['#download-btn'],
-            exec: function() {
-                var l = $('#download-btn').prop('href')
-                var btn = $('.buttons > .btn.btn-success.btn-sm')
-                var txt = btn.html()
-                btn.remove()
-                // FIXME: Ugly
-                $('.buttons').append('<a class="btn btn-success btn-sm" href="' + l + '">' + txt + '</a>')
             }
         },
         Sourceforge: {

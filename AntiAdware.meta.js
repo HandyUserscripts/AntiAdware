@@ -63,7 +63,6 @@
 // @include http*://*shared.com/*
 // @include http*://*softm8.com*
 // @include http*://*.softonic.*
-// @include http*://*solidfiles.com/*
 // @include http*://*sourceforge.net/*
 // @include http*://*tusfiles.net/*
 // @include http*://*unlimitzone.com/*
