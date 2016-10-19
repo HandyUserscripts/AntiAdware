@@ -68,7 +68,7 @@
 // @include http*://*tusfiles.net/*
 // @include http*://*unlimitzone.com/*
 // @include http*://*uploading.com/*
-// @include http*://*uploadshub.com/*
+// @include http*://*uplod.ws/*
 // @include http*://*uplod.it/*
 // @include http*://*uptobox.com/*
 // @include http*://*userscdn.com/*

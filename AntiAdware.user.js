@@ -68,7 +68,7 @@
 // @include http*://*tusfiles.net/*
 // @include http*://*unlimitzone.com/*
 // @include http*://*uploading.com/*
-// @include http*://*uploadshub.com/*
+// @include http*://*uplod.ws/*
 // @include http*://*uplod.it/*
 // @include http*://*uptobox.com/*
 // @include http*://*userscdn.com/*
@@ -522,10 +522,10 @@ function () {
             uncheck: ['#force_exe'],
             hide: ['.use_download_manager']
         },
-        UploadsHub:{
-            host: ['uploadshub.com'],
+        Uplodws:{
+            host: ['uplod.ws'],
             uncheck: ['#chkIsAdd'],
-            hide: ['label:contains("manager")']
+            hide: ['label:contains("offer")','img[src="http://goo.gl/CGHVVo"]']
         },
         Uplod: {
             host: ['uplod.it'],
