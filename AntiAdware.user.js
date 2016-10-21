@@ -342,16 +342,14 @@ function () {
         Opensubtitles: {
             host: ['opensubtitles.org'],
             uncheck: ['#cbDownloader'],
+            optuncheck: {
+                // Never stop to try unchecking the checkbox
+                constantcheck: true
+            },
             hide: ['#cbDownloader','#lb-dwl'],
-            // Replace the URL of the download button with a direct link
-            exec: function() {
-                var currPath = $(location).attr('pathname').split('/')
-                var currLang = currPath[1]
-                var currSubId = currPath[3]
-                // Build the download link using information that we gathered in the path
-                var newDownloadLink = 'http://dl.opensubtitles.org/'+ currLang +'/download/sub/'+ currSubId
-                // Replace the download link with the one that we have built
-                $('#bt-dwl').attr('href', newDownloadLink)
+            opthide: {
+                // Never stop to try hiding the object
+                constantcheck: true
             }
         },
         Filehippo: {
