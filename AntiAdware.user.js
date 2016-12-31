@@ -144,7 +144,7 @@ function () {
         },
         Chip: {
             host: ['chip.de'],
-            hide: ['.Download-Button-UnderText--Installer'],
+            hide: ['.download_button'],
             exec: function() {
                 var dl = $('.ManualInstallLink').prop('href')
                 var btn = $('.dl-btn-default .Download-Button')
