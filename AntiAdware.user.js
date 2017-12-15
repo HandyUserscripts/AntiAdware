@@ -8,7 +8,7 @@
 // @namespace HandyUserscripts
 // @icon https://i.imgur.com/tq7PJr0.png
 // @description Remove forced download accelerators, managers, and adware on supported websites
-// @description:fr Évitez les applications indésirables lors des téléchargements sur de nombreux sites avec AntiAdware ! 
+// @description:fr Évitez les applications indésirables lors des téléchargements sur de nombreux sites avec AntiAdware !
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
@@ -67,6 +67,7 @@
 // @include http*://*tusfiles.net/*
 // @include http*://*unlimitzone.com/*
 // @include http*://*uploading.com/*
+// @include http*://*uploadocean.com/*
 // @include http*://*uplod.ws/*
 // @include http*://*uploads.to/*
 // @include http*://*uptobox.com/*
@@ -507,6 +508,11 @@ function () {
             uncheck: ['#force_exe'],
             hide: ['.use_download_manager']
         },
+        UploadOcean: {
+            host: ['uploadocean.com'],
+            uncheck: ['#tick-dwn'],
+            hide: ['.tick-box']
+        },
         Uplodws:{
             host: ['uplod.ws'],
             uncheck: ['#chkIsAdd'],
@@ -562,7 +568,7 @@ function () {
     // Avoids conflicts when the main page is also using jQuery or another library using '$'
     // this.$ = this.jQuery = jQuery.noConflict(true);
     // --> Instead I use @grant GM_addStyle which restores the sandbox and thus avoid us this trick
-    
+
     // This jQuery plugin will gather the comments within
     // the current jQuery collection, returning all the
     // comments in a new jQuery collection.
@@ -744,7 +750,7 @@ function () {
                     var periodicHide = setInterval(function () {
                         // If the hide succeeded this time, we stop to try hiding it
                         if (hide($(currHide))) clearInterval(periodicHide)
-                        // Otherwise, we continue to try hiding it      
+                        // Otherwise, we continue to try hiding it
                     }, 100)
                 }
             })
@@ -764,12 +770,12 @@ function () {
                     show($(currShow))
                     // If the show succeeded this time, we stop to try showing it
                     if (show($(currShow))) clearInterval(periodicShow)
-                    // Otherwise, we continue to try showing it      
+                    // Otherwise, we continue to try showing it
                 }, 100)
             })
         }
     }
-    
+
     // Google Chrome trick: sometimes the script is executed after that DOMContentLoaded was triggered, in this case we directly run our code
     if (document.readyState == "complete") {
         applyRules()
