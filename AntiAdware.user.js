@@ -172,15 +172,12 @@ function () {
             host: ['coolrom.com'],
             hide: ['table[align="center"][width="300"]'],
             exec: function() {
-                var downloadButton = $('.download_link')
+                var downloadButton = $('a[href*="downloader.php?id="]')
                 var downloadId = document.location.pathname.split('/')[3]
 
                 if (typeof downloadButton != 'undefined' && downloadId.match(/^\d+$/)) {
-                    downloadButton.prop('href', 'http://coolrom.com/dlpop.php?id=' + downloadId)
+                    downloadButton.prop('href', '/dlpop.php?id=' + downloadId)
                 }
-
-                // Avoid the HTML page to be triggered as a download
-                downloadButton.removeAttr('download')
             }
         },
         DailyUploads: {
