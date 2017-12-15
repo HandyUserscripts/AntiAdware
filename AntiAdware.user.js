@@ -264,7 +264,9 @@ function () {
         },
         FilesCDN: {
             host: ['filescdn.com'],
-            hide: ['.btn.bg-green-400']
+            exec: function() {
+                $('#btn_download').prop('onclick', null)
+            }
         },
         Freewarefiles: {
             host: ['freewarefiles.com'],
