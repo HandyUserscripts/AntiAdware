@@ -172,12 +172,17 @@ function () {
             host: ['coolrom.com'],
             hide: ['table[align="center"][width="300"]'],
             exec: function() {
-                var downloadButton = $('a[href*="downloader.php?id="]')
-                var downloadId = document.location.pathname.split('/')[3]
+                window.addEventListener("load", function () {
+                  var downloadButton = $('img[src*="download_large.png"]').parent('a')
+                  var downloadId = document.location.pathname.split('/')[3]
 
-                if (typeof downloadButton != 'undefined' && downloadId.match(/^\d+$/)) {
-                    downloadButton.prop('href', '/dlpop.php?id=' + downloadId)
-                }
+                  if (typeof downloadButton != 'undefined' && downloadId.match(/^\d+$/)) {
+                      // Get rid of all events on the button
+                      var newButton = downloadButton.clone()
+                      newButton.prop('href', '/dlpop.php?id=' + downloadId)
+                      downloadButton.replaceWith(newButton)
+                  }
+                });
             }
         },
         DailyUploads: {
