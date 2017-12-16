@@ -1,0 +1,6 @@
+extends: google
+env:
+  browser: true
+  greasemonkey: true
+parserOptions:
+  ecmaVersion: 7

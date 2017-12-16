@@ -1,0 +1,24 @@
+{
+  "name": "antiadware",
+  "version": "1.0.0",
+  "description": "Avoid to get **unwanted applications** while downloading **on many websites** with **AntiAdware**! (also known as **Adware Atomizer**)",
+  "main": "AntiAdware.meta.js",
+  "scripts": {
+    "eslint": "eslint",
+    "lint": "eslint."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HandyUserscripts/AntiAdware.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HandyUserscripts/AntiAdware/issues"
+  },
+  "homepage": "https://github.com/HandyUserscripts/AntiAdware#readme",
+  "devDependencies": {
+    "eslint": ">=4.1.1",
+    "eslint-config-google": "^0.9.1"
+  }
+}
