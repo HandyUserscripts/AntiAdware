@@ -809,15 +809,20 @@
         return true;
     }
 
-    for (let rule of adwareRules) {
-        // Create a RegExp to test if we are on this domain
-        let testHosts = new RegExp(rule.host.join('|'), 'i');
-        // If we are on one of the domains
-        if (testHosts.test(document.domain)) {
-          // eslint-disable-next-line no-var
-          var currRule = rule;
-          break;
-        }
+    for (let ruleName in adwareRules) {
+      if (!adwareRules.hasOwnProperty(ruleName)) {
+        continue;
+      }
+      let rule = adwareRules[ruleName];
+
+      // Create a RegExp to test if we are on this domain
+      let testHosts = new RegExp(rule.host.join('|'), 'i');
+      // If we are on one of the domains
+      if (testHosts.test(document.domain)) {
+        // eslint-disable-next-line no-var
+        var currRule = rule;
+        break;
+      }
     }
 
     if (typeof currRule == 'undefined') return;
