@@ -12,7 +12,7 @@
 // @description:de Mit AntiAdware vermeidest du auf zahlreichen Webseiten den versehentlichen Download von unerwünschten Programmen
 // @description:zh-TW AntiAdware, 讓你避免在許多網站上意外下載到廣告軟體.
 // @description:zh-CN AntiAdware, 让你避免在许多网站上意外下载到广告软体.
-// @version 1.42.0
+// @version 1.42.1
 // @license Creative Commons BY-NC-SA
 
 // jQuery dependency; an offline version of this is included in the script in case it goes down
@@ -172,12 +172,17 @@ function () {
             host: ['coolrom.com'],
             hide: ['table[align="center"][width="300"]'],
             exec: function() {
-                var downloadButton = $('a[href*="downloader.php?id="]')
-                var downloadId = document.location.pathname.split('/')[3]
+                window.addEventListener("load", function () {
+                  var downloadButton = $('img[src*="download_large.png"]').parent('a')
+                  var downloadId = document.location.pathname.split('/')[3]
 
-                if (typeof downloadButton != 'undefined' && downloadId.match(/^\d+$/)) {
-                    downloadButton.prop('href', '/dlpop.php?id=' + downloadId)
-                }
+                  if (typeof downloadButton != 'undefined' && downloadId.match(/^\d+$/)) {
+                      // Get rid of all events on the button
+                      var newButton = downloadButton.clone()
+                      newButton.prop('href', '/dlpop.php?id=' + downloadId)
+                      downloadButton.replaceWith(newButton)
+                  }
+                });
             }
         },
         DailyUploads: {
