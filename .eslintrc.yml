@@ -1,6 +1,9 @@
 extends: google
+
 env:
   browser: true
   greasemonkey: true
 parserOptions:
   ecmaVersion: 7
+rules:
+  max-len: [1, 160]

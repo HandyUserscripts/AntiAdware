@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 // ==UserScript==
 // @name AntiAdware
 // @name:fr AntiAdware
@@ -89,7 +88,6 @@
 
 // @run-at document-start
 // ==/UserScript==
-/* eslint-enable max-len */
 
 (function() {
     // If true, displays log in the console
